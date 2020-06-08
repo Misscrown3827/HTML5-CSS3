@@ -1,0 +1,18 @@
+@media screen {
+    html {
+        height: 100%;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+@media print
+{
+
+    h1 {
+        text-align: center;
+        color: red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}

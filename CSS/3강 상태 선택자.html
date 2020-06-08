@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>상태 선택자</title>
+    <style>
+        /* 상태 선택자 태그 */
+        input:enabled{background-color: red;}
+
+        input:disabled{background-color: blue;}
+
+        input:focus{background-color: yellow;}
+        
+        /* 상태,동위 선택자 복합 활용 */
+        input[type=checkbox]:checked + div {height: 900px;}
+
+        div {overflow: hidden; width: 900px; height: 0px;
+
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;}
+</style>
+</head>
+<body>
+    <!-- 상태 선택자 태그-->
+    <h2>Enabled</h2>
+    <input />
+    <h2>Disabled</h2>
+    <input disabled="disabled" />
+</body>
+
+<body>
+    <!-- 상태,동위 선택자 복합 활용 -->
+    <input type="checkbox" >
+    <div>
+        <h1>Lorem iqsum</h1>
+        <p>Exercitation adipisicing dolore officia mollit sint aliquip dolor labore est sit officia mollit sint. Enim magna ipsum dolor anim reprehenderit veniam. Occaecat aliquip fugiat nisi enim proident eu. Magna esse nulla proident irure eiusmod voluptate ullamco aute minim. Officia in elit aliquip Lorem duis amet cupidatat et irure velit enim laborum.
+
+Aliqua laborum enim excepteur eu veniam voluptate sunt commodo est eiusmod. Sit commodo cillum occaecat mollit sint duis veniam est Lorem et deserunt nisi aliquip. Culpa laborum pariatur laborum laborum enim. Culpa exercitation cillum amet dolor velit dolor dolor.
+
+Dolore anim cupidatat incididunt excepteur in est velit sit non incididunt. Do nisi nostrud adipisicing sit. Aliqua aliquip labore qui ex id. Commodo enim aliquip irure et aliquip ea id ipsum elit fugiat sit anim enim non. Eiusmod cupidatat sint nostrud laborum non proident. In sunt occaecat aliqua excepteur voluptate sit commodo velit ea velit et.
+
+Enim eiusmod aliquip ipsum aute qui aliquip non occaecat dolore ut laboris officia cillum. Labore anim do velit excepteur quis exercitation aute nulla. Nostrud ad ea mollit non quis ipsum amet officia cillum cupidatat.</p>
+    </div>
+</body>
+</html>

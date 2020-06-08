@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>부정선택자</title>
+    <!-- 패스워드가 아닌 창은 빨간색으로 칠한다 -->
+    <style>
+        input:not([type=password]) {
+            background: red;
+            }
+    </style>
+</head>
+<body>
+    <input type="passsword" />
+    <input type="text" />
+    <input type="password" />
+    <input type="text" />
+
+</body>
+</html>

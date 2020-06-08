@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 간단한 초기화 코드 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <style>
+        .wrap {
+            overflow: hidden;
+            /*내부에 있는 것에 float left 줘서 수평 정렬 하기 위함*/
+        
+        
+        
+        }
+
+        .aside {
+            float: left;
+            width: 200px;
+        }
+
+        .section {
+            float: left;
+            width: 100%;
+
+            /* 포인트! */
+            /*200px 만큼 왼쪽 공간을 차지하고 있음
+            그래서 section을 오른쪽으로 200px 당김*/
+            /*근데 이렇게 하면 오른쪽 짤림*/
+            margin-right: -200px;
+        }
+
+        .inner-section
+        {
+            /*그래서 다시 오른쪽으로 밀어내면 됨*/
+            padding-right: 200px;
+        }
+
+        body
+        {
+            min-width: 600px;
+        }
+
+        .header
+        {
+            height: 60px;
+            line-height: 60px;
+            background-color: aqua;
+            border-bottom: 1px solid black;
+            
+            /* case3 */
+            /* position: relative; */
+            
+            padding-left: 20px;
+
+
+
+
+
+        }
+
+        /* .header h1
+        {
+            margin-left: 20px;
+        } */
+
+        /* case 3  */
+        /* .header h1
+        {
+            position: absolute;
+            left: 20px;
+        } */
+
+        .header
+        {
+            position: fixed;
+            left: 0;
+            right: 0;
+        }
+
+        .wrap
+        {
+            padding-top: 60px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Fluid</h1>
+    </div>
+    <div class="wrap">
+        <!-- 고정된 부분(왼쪽) -->
+        <div class="aside">
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>dfgdfg</p>
+        </div>
+        <!-- 움직이는 부분(오른쪽) -->
+        <div class="section">
+            <div class="inner-section">
+                <h1>lorem ipsum1</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam qui, amet odit porro illo
+                    vero
+                    ipsa rerum magnam culpa iusto iure, asperiores dolores illum quaerat libero hic soluta consequuntur.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam qui, amet odit porro illo
+                    vero
+                    ipsa rerum magnam culpa iusto iure, asperiores dolores illum quaerat libero hic soluta consequuntur.
+                </p>
+                <h1>lorem ipsum2</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam qui, amet odit porro illo
+                    vero
+                    ipsa rerum magnam culpa iusto iure, asperiores dolores illum quaerat libero hic soluta consequuntur.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam qui, amet odit porro illo
+                    vero
+                    ipsa rerum magnam culpa iusto iure, asperiores dolores illum quaerat libero hic soluta consequuntur.
+                </p>
+                <h1>lorem ipsum3</h1>
+                <p>Fugiat laboris est ullamco aliquip cupidatat. Id voluptate adipisicing esse duis. Commodo veniam ex
+                    nisi
+                    veniam cupidatat velit aute ad proident. Deserunt do laboris reprehenderit laboris proident anim.
+
+                    Pariatur duis enim id pariatur quis quis tempor aliquip elit voluptate ex. Velit mollit do consequat
+                    proident incididunt. Commodo officia irure nostrud enim in incididunt non nulla excepteur dolor
+                    consequat nulla commodo. Quis veniam cillum dolore culpa dolore magna esse anim reprehenderit irure
+                    exercitation pariatur. Mollit sit culpa ad tempor.
+
+                    Quis ea sunt do reprehenderit ullamco. In voluptate minim ad dolore anim magna dolor consequat in
+                    nostrud nulla dolore. Sint proident cillum sit duis excepteur do culpa. Cillum non ea do quis aute.
+                    Sunt
+                    excepteur commodo laboris est mollit nulla ullamco.
+
+                    Nostrud amet eu deserunt dolore est duis exercitation quis tempor consectetur. Est quis aute aute
+                    laboris non elit dolor qui ea cupidatat. Exercitation ex Lorem duis sit cillum reprehenderit dolor
+                    tempor do amet magna mollit veniam in. Sint velit est laboris eu velit aute adipisicing Lorem nulla
+                    excepteur.
+
+                    Officia adipisicing proident ut officia ea quis. Laborum exercitation dolore excepteur nostrud
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    deserunt
+                    officia adipisicing nulla veniam aliqua aute cupidatat minim. Nostrud laboris incididunt mollit
+                    pariatur
+                    adipisicing ipsum do enim dolore consequat deserunt dolore ipsum adipisicing. Pariatur laboris quis
+                    amet
+                    magna deserunt cillum anim dolore. Qui nisi ex labore excepteur ea nisi aute.
+
+                    Veniam aliqua aliqua commodo irure. Fugiat adipisicing reprehenderit mollit est Lorem. In est
+                    reprehenderit deserunt dolore laboris irure nisi laboris elit anim dolore tempor culpa. Irure et
+                    quis
+                    mollit velit officia sunt enim ea et consequat id. Non commodo tempor cillum laboris laborum
+                    consequat
+                    occaecat.
+
+                    Minim eiusmod reprehenderit qui exercitation sunt cillum tempor consectetur tempor sint dolor aute
+                    quis.
+                    Anim reprehenderit ad Lorem laboris incididunt. Fugiat non labore enim ut.
+
+                    Reprehenderit mollit irure laboris duis quis labore duis. Cupidatat qui ad anim velit id velit.
+                    Occaecat
+                    veniam eu ipsum aliquip exercitation veniam cillum.
+
+                    Lorem laboris ex deserunt proident non fugiat sint sint ipsum velit non mollit duis. Enim esse eu
+                    culpa
+                    ipsum est qui esse laboris exercitation adipisicing elit amet reprehenderit. Non esse aliquip cillum
+                    dolor laborum eiusmod sunt ad eiusmod pariatur. Ad ad nulla et deserunt fugiat anim. Cillum proident
+                    laborum in tempor eiusmod magna qui deserunt sit.
+
+                    Quis sint et ullamco qui minim consequat elit amet consectetur deserunt. Sint nisi pariatur qui
+                    laborum.
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                    Commodo proident consequat eu incididunt exercitation amet.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam qui, amet odit porro illo
+                    vero
+                    ipsa rerum magnam culpa iusto iure, asperiores dolores illum quaerat libero hic soluta consequuntur.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

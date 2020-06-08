@@ -1,0 +1,37 @@
+/* 헤더 스타일 */
+#main_header>div.text>a {
+    font-size: 100px;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(206, 126, 7);
+    -webkit-box-shadow: 10px 10px 20px 5px rgb(100, 124, 38);
+    -moz-box-shadow: 10px 10px 20px 5px rgb(228, 24, 167);
+    box-shadow: 10px 10px 20px 5px rgb(206, 241, 9);
+    background: rgb(178, 236, 42);
+    border-radius: 50px;
+}
+
+div.text>p {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(8, 245, 39);
+
+}
+
+form {
+    margin-top: 190px;
+    margin-left: 300px;
+}
+
+input:first-child {
+    width: 300px;
+    border-radius: 30px;
+    background: rgb(87, 233, 111);
+}
+
+input:last-child {
+    border-radius: 30px;
+    background: rgb(223, 108, 31);
+    text-align: center;
+}

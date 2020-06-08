@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+
+            /*transition-duration: 2s, 5s, 10s;
+            transition-property: width, background-color, 
+            border-radius;*/
+
+            transition: width 2s ease 0s,
+                        background-color 2s ease 2s,
+                        border-radius 2s ease 4s;
+            /*<속성이름> <시간> <타이밍함수> <딜레이>*/
+        }
+        .wrap:hover>.box
+        {
+            width: 500px;
+            background-color: black;
+            opacity: 0.2;
+            border-radius: 30px;
+        }
+
+        /*css 우선순위는 상세하게 선택한 태그가 더 높다. */
+        .box:nth-child(1){ transition-timing-function: linear;      }
+        .box:nth-child(2){ transition-timing-function: ease;        }
+        .box:nth-child(3){ transition-timing-function: ease-in;     }
+        .box:nth-child(4){ transition-timing-function: ease-out;    }
+        .box:nth-child(5){ transition-timing-function: ease-in-out; }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

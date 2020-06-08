@@ -1,0 +1,67 @@
+/* 메뉴(1) */
+#nav_one>ul {
+    overflow: hidden;
+}
+
+#nav_one>ul>li {
+    float: left;
+}
+
+#nav_one>ul>li>a {
+    display: block;
+    padding: 8px 20px;
+    border: 1px solid black;
+    background: rgb(23, 196, 226);
+    height: 22px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nav_one>ul>li:first-child>a {
+    border-radius: 20px 0 0 20px;
+
+}
+
+#nav_one>ul>li:last-child>a {
+    border-radius: 0 20px 20px 0;
+}
+
+#nav_one>ul>li>a:hover {
+    background: blue;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* 메뉴(2) */
+#nav_two>ul {
+    overflow: hidden;
+}
+
+#nav_two>ul>li {
+    float: left;
+}
+
+#nav_two>ul>li>a {
+    display: block;
+    padding: 10px 50px;
+    border: 1px solid black;
+    background: rgb(12, 226, 76);
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    left: 80px;
+}
+
+#nav_two>ul>li>a:hover {
+    background: black;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#nav_two>ul>li:first-child>a {
+    border-radius: 20px 0 0 20px;
+}
+
+#nav_two>ul>li:last-child>a {
+    border-radius: 0 20px 20px 0;
+}

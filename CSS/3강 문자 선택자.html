@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>문자 선택자</title>
+    <!-- 시작, 전후 문자 선택자 -->
+    <style>
+        p::first-letter {font-size: 3em;}
+        p::first-line {color:red}
+        p {counter-increment: rint;}
+        p::before {content: counter(rint)".";}
+        p::after {content:"-" attr(data-page)"page";}
+        p::first-letter {font-size: 3em;}
+    </style>
+</head>
+<body>
+    <!-- 시작,전후 문자 선택자 -->
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Irure magna dolore dolore exercitation est ipsum in elit nisi deserunt eu.</p>
+    <p>Ex irure consectetur adipisicing deserunt ad. Aute enim officia sit non exercitation. 
+       Irure minim veniam dolor cillum voluptate officia incididunt eu voluptate veniam. 
+       Pariatur velit minim ut nostrud ex. Culpa consequat excepteur ipsum elit elit eiusmod dolor occaecat qui do laboris. 
+       Ullamco sunt aute ut minim non magna enim.
+       Ad ut proident dolore adipisicing non aute laborum ex. 
+       Sint dolor magna velit reprehenderit nisi ex ipsum laborum anim consectetur mollit nostrud deserunt consectetur. 
+       Eu irure aliquip esse elit ut exercitation qui ut cillum magna laborum. Proident mollit est ipsum ipsum veniam occaecat.</p>
+    <p data-page="52">Ex eiusmod ex commodo amet. Ad officia non anim elit aliqua. Consequat pariatur et cillum commodo aliqua ut consectetur quis. Laborum magna mollit anim deserunt. Ut consectetur esse deserunt enim ullamco irure anim excepteur duis excepteur est velit. Sit est nostrud consequat in. Culpa nulla cupidatat esse excepteur do eu.
+    <p data-page="273">Dolor sint consequat officia cillum nisi velit commodo in exercitation nulla. Adipisicing id consequat Lorem incididunt deserunt amet id. Nostrud est veniam nisi sint in commodo cillum cupidatat. Elit pariatur sunt deserunt cupidatat voluptate ex esse ex aliqua fugiat laboris eiusmod. Ipsum labore aliquip nostrud nulla ipsum enim velit cillum cupidatat nisi. Commodo ipsum amet quis dolore sint aute cillum pariatur aute dolor amet sit ex. Nostrud cillum cupidatat sunt velit ex.
+    <p data-page="288">Aute nulla sunt est mollit quis ullamco veniam laborum. Et deserunt labore amet sint veniam eu dolore Lorem ad elit. Dolore aute magna ea in adipisicing duis laborum pariatur voluptate irure ut consequat. Sint aliquip ut elit sint exercitation ad cillum amet fugiat aute ex voluptate esse. Id eiusmod sint anim non nulla. Proident ea eiusmod dolor ut. Excepteur ullamco dolore nisi cillum in aliqua do est amet sint veniam reprehenderit consequat cupidatat.
+       Laborum ex voluptate irure voluptate. Non in Lorem labore excepteur consectetur do sunt excepteur eiusmod Lorem duis minim do ea. Esse veniam qui aliquip irure ad do ipsum magna cupidatat sit magna do consectetur. Cupidatat deserunt reprehenderit deserunt do eu occaecat cillum ipsum ad magna ut. Aliqua et commodo nostrud ullamco elit et enim minim pariatur officia ullamco id. Anim dolor commodo commodo fugiat irure officia.</p>
+    </p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>동위 선택자</title>
+    <style>
+        /* 반응 선택자 */
+        h1:hover {color: orangered;}
+
+        h1:active {color:plum}
+
+        /* 동위 선택자 */
+        h1+h2{color: blue;}
+
+        h1~h2{background-color: orange;}
+
+        /* 상태 선택자 */
+        input:enabled{background-color: blue;}
+
+        input:disabled{background-color: coral;}
+        
+        input:focus{background-color: cornflowerblue;}
+    </style>
+</head>
+<body>
+    <!-- 상태 선택자 -->
+    <input value="enabled"/>
+    <input value="disabled" disabled="disabled">
+
+    <!-- 반응, 동위 선택자 -->
+    <h1>12345678</h1>
+    <h2>1234</h2>
+    <h2>1234</h2>
+    <h2>1234</h2>
+    <h2>1234</h2>
+    
+</body>
+</html>

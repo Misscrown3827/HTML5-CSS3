@@ -1,0 +1,101 @@
+ /* 첫 번째 본문 */
+ #content {
+     width: 960px;
+     margin: 0 auto;
+     overflow: hidden;
+     position: relative;
+     margin-top: 200px;
+ }
+
+ div.text_num1 {
+     overflow: hidden;
+     width: 600px;
+     height: 400px;
+     background: rgb(164, 250, 5);
+     border-radius: 20px;
+     font-family: 'Piedra', cursive;
+     color: rgba(255, 0, 157, 0.548);
+     border: 5px solid yellowgreen;
+ }
+
+ div.text_num1>h1 {
+     font-size: 45px;
+ }
+
+ div.text_num1>p::first-letter {
+     font-size: 40px;
+     color: white;
+ }
+
+ div.text_num1>p::first-line {
+     color: black;
+ }
+
+ div.text_num1>p::selection {
+     background-color: white;
+     color: black;
+ }
+
+ /* 두 번째 본문 */
+ div.text_num2 {
+     overflow: scroll;
+     margin-top: 20px;
+     height: 400px;
+     width: 600px;
+     background: rgb(63, 63, 199);
+     border-radius: 20px;
+     color: white;
+     font-family: 'Pacifico', cursive;
+
+ }
+
+ div.text_num2>h1 {
+     font-size: 45px;
+     color: rgb(240, 4, 4);
+ }
+
+ div.text_num2>p::first-letter {
+     font-size: 40px;
+     color: rgb(7, 175, 241)
+ }
+
+ div.text_num2>p::first-line {
+     color: black;
+ }
+
+ div.text_num2>p::selection {
+     background-color: rgb(238, 255, 0);
+     color: rgb(0, 217, 255);
+ }
+
+ /* 세 번째 본문 */
+ div.text_num3 {
+     overflow: hidden;
+     margin-top: 20px;
+     width: 600px;
+     height: 250px;
+     background: rgb(216, 48, 48);
+     border-radius: 20px;
+     color: rgb(189, 218, 28);
+     font-family: 'Open Sans Condensed', sans-serif;
+     border: 5px solid rgb(99, 183, 204);
+ }
+
+ div.text_num3>h1 {
+     font-size: 45px;
+     color: rgb(218, 215, 67);
+ }
+
+ div.text_num3>p::first-letter {
+     font-size: 40px;
+     color: rgba(255, 255, 255, 0.548);
+ }
+
+ div.text_num3>p::first-line {
+     color: rgb(146, 58, 204);
+ }
+
+ div.text_num3>p::selection {
+     background-color: snow;
+     color: teal;
+ }

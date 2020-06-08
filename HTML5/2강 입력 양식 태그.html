@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>입력 양식 태그</title>
+</head>
+
+<body>
+    <!-- 입력 양식 입니다 -->
+
+    <!-- 주소에 입력 방식 -->
+    <form method="GET">
+        <input type="text" name="search">
+        <input type="submit"></form>
+    <hr>
+    <!-- 주소에 입력 하지 않는 방식 -->
+    <form method="POST">
+        <input type="text" name="search">
+        <input type="submit"></form>
+    <hr>
+    <!-- TYPE 속성 -->
+    <form>
+        <input type="text" name="text"> <br>
+        <input type="button" name="button"> <br>
+        <input type="password" name="password"> <br>
+        <input type="submit" name="submit"> 
+        <input type="reset" name="reset"> <br> 
+        <input type="file" name="file"> <br> 
+        <input type="image" name="image"> <br>
+        <input type="radio" name="radio"> <br>
+        <input type="checkbox" name="checkbox"> <br>
+        <input type="hidden" name="hidden">
+        <br>
+    <!-- label 속성 -->
+    <!-- laber for= input id 같음 -->
+        <label for="id">성별</label>   
+        <input type="radio" name="gender" id="">
+        <input type="radio" name="gender" id="">
+        <input type="radio" name="gender" id="">
+        
+        <br>
+        <label>나이</label>
+        <input type="radio" name="age" id="">
+        <input type="radio" name="age" id="">
+        <input type="radio" name="age" id="">
+        <br><br>
+    <!-- texttarea 속성-->
+        <textarea>hello textarea</textarea>
+    <!--fieldset , option 속성 -->
+        <fieldset>
+            <legend>입력 양식</legend>
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">이메일</label></td>
+                    <td><input id="mail" type="email"></td>
+                </tr>
+            </table>
+        </fieldset>
+    
+        <select name="" id="" multiple>
+            <optgroup label="분식집 음식">
+                <option value="">떡볶이</option>
+                <option value="">쿨피스</option>
+            </optgroup>
+            <optgroup label="과일">
+                <option value="">참외</option>
+                <option value="">사과</option>
+            </optgroup>
+        </select>       
+    </form>
+
+
+
+</body>
+
+</html>
